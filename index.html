@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/reset.css">
     <link rel="stylesheet" href="/assets/style.css ">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,9 +28,9 @@
                 </div>
                 <div class="user-block__profile--selector">
                     <ul class="timeframe__selector">
-                        <li id="daily">Daily</li>
-                        <li id="weekly" class="active">Weekly</li>
-                        <li id="montly">Montly</li>
+                        <li class="time-framer" id="daily" onclick="changeTimeFrame(id)">Daily</li>
+                        <li class="time-framer" id="weekly" onclick="changeTimeFrame(id)" class="active">Weekly</li>
+                        <li class="time-framer" id="montly" onclick="changeTimeFrame(id)">Montly</li>
                     </ul>
                 </div>
             </div>
@@ -158,3 +158,7 @@
 </body>
 
 </html>
+
+<!-- application js -->
+
+<script src="/services/index.js"></script>
