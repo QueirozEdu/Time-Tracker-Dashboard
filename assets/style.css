@@ -127,6 +127,7 @@
 
 .time-manager {
     display: flex;
+    max-width: 720px;
 
 }
 
