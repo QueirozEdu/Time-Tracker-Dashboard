@@ -21,6 +21,8 @@
     height: 100vh;
     background-color: var(--very-dark-blue);
     margin: auto;
+    display: flex;
+    justify-content: space-around;
 }
 
 .time-manager {
@@ -28,13 +30,14 @@
     align-items: center;
     justify-content: center;
     height: 100%;
+    width: 50%;
 }
 .cards-list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 50px;
-    grid-row-gap: 50px;
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
     
 }
 
@@ -53,7 +56,8 @@
     justify-content: space-between;
     background-color: var(--dark-blue);
 
-    height: 55%;
+    height: 475px;
+    min-width: 250px;
     width: 250px;
 
     border-radius: 15px;
@@ -119,4 +123,94 @@
 
 .timeframe__selector .active {
     color: white;
+}
+
+.time-manager {
+    display: flex;
+
+}
+
+.single-card {
+    width: 225px;
+    height: 225px;
+
+    background-position: top right;
+    background-repeat: no-repeat;
+
+    border-radius: 15px;
+}
+
+.card__information {
+    background-color: var(--dark-blue);
+    width: 101%;
+    height: 80%;
+
+
+    border-radius: 15px;
+    position: relative;
+    top: 46px;
+    left: -1px;
+}
+
+.card__information:hover {
+    background-color: var(--desaturated-blue);
+}
+
+.card__information--header {
+    font-size: 1.25em;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 25px 15px 0 20px;
+}
+.more-info__icon:hover {
+    cursor: pointer;
+}
+
+.card__information--time {
+    color: white;
+    font-size: 2.5em;
+    font-weight: 300;
+    padding: 25px 15px 0 20px;
+}
+
+.card__information--history {
+    color: var(--pale-blue);
+    padding: 25px 15px 0 20px;
+    font-size: 0.8em;
+    font-weight: 400;
+}
+
+#work {
+    background-color: var(--light-red-work);
+    background-image: url(/assets/images/icon-work.svg);
+    
+}
+
+#play {
+    background-color: var(--soft-blue-play);
+    background-image: url(/assets/images/icon-play.svg);
+}
+
+#study {
+    background-color: var(--light-red-study);
+    background-image: url(/assets/images/icon-study.svg);
+}
+
+#exercise {
+    background-color: var(--lime-green-exercise);
+    background-image: url(/assets/images/icon-exercise.svg);
+}
+
+#social {
+    background-color: var(--violet-social);
+    background-image: url(/assets/images/icon-social.svg);
+}
+
+#self-care {
+    background-color: var(--soft-orange-self-care);
+    background-image: url(/assets/images/icon-self-care.svg);
 }
