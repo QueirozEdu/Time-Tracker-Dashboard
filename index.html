@@ -10,8 +10,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+    <script type="module" src="/assets/timeData.js"></script>
     <title>Time Manager</title>
 </head>
+
 
 <body>
     <main class="main">
@@ -19,7 +21,6 @@
             <div class="user-block">
                 <div class="user-block__profile">
                     <div class="user-block__profile___information">
-
                         <img src="/assets/images/image-jeremy.png" class="profile__pic" alt="">
                         <p class="report-for">Report for</p>
                         <p class="user-first-name">Jeremy</p>
@@ -47,7 +48,7 @@
                                 </svg>
                             </div>
                             <div class="card__information--time">
-                                <p class="time-information" id="work-time-information">32hrs</p>
+                                <p class="time-information" id="work-time-information"></p>
                             </div>
                             <div class="card__information--history">
                                 <p class="time-history-information" id="work-time-history-information">Last Week-36hrs
@@ -160,5 +161,4 @@
 </html>
 
 <!-- application js -->
-
 <script src="/services/index.js"></script>
