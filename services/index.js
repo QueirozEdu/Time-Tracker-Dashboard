@@ -34,6 +34,8 @@ let exerciseHours = time.exercise;
 let socialHours = time.social;
 let selfHours = time.self;
 
+
+
    
 
 
@@ -53,6 +55,7 @@ function changeTimeFrame(clicked_id) {
         }
     }
 }
+changeTimeFrame("daily")
 
 function changeSchedule(id) {
     let time = id
@@ -61,3 +64,4 @@ function changeSchedule(id) {
         document.getElementById('work-time-information').innerText = workHours.current.concat("hrs");
     }
 }
+
