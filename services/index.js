@@ -99,7 +99,7 @@ let socialHoursWeekly = timeWeek.social;
 let selfHoursWeekly = timeWeek.self;
 
 let workHoursMontly = timeMonth.work;
-let playHoyrsMontly = timeMonth.play;
+let playHoursMontly = timeMonth.play;
 let studyHoursMontly = timeMonth.study;
 let exerciseHoursMontly = timeMonth.exercise;
 let socialHoursMontly = timeMonth.social;
@@ -151,7 +151,7 @@ function changeSchedule(id) {
         document.getElementById('work-time-information').innerText = workHoursWeekly.current.concat("hrs");
         document.getElementById('play-time-information').innerText = playHoursWeekly.current.concat("hrs");
         document.getElementById('exercise-time-information').innerText = exerciseHoursWeekly.current.concat("hrs");
-        document.getElementById('social-time-information').innerText = socialHours.current.concat("hrs");
+        document.getElementById('social-time-information').innerText = socialHoursWeekly.current.concat("hrs");
         document.getElementById('study-time-information').innerText = studyHoursWeekly.current.concat("hrs");
         document.getElementById('self-care-time-information').innerText = selfHoursWeekly.current.concat("hrs");
 
@@ -163,7 +163,19 @@ function changeSchedule(id) {
         document.getElementById('self-care-time-history-information').innerText = "Last Week - ".concat(selfHoursWeekly.past).concat("hrs");
     }
     else {
-        document.getElementById('work-time-information').innerText = workHoursMontly.current.concat("hrs")
+        document.getElementById('work-time-information').innerText = workHoursMontly.current.concat("hrs");
+        document.getElementById('play-time-information').innerText = playHoursMontly.current.concat("hrs");
+        document.getElementById('exercise-time-information').innerText = exerciseHoursMontly.current.concat("hrs");
+        document.getElementById('social-time-information').innerText = socialHoursMontly.current.concat("hrs");
+        document.getElementById('study-time-information').innerText = studyHoursMontly.current.concat("hrs");
+        document.getElementById('self-care-time-information').innerText = selfHoursMontly.current.concat("hrs");
+
+        document.getElementById('work-time-history-information').innerText = "Last Month - ".concat(workHoursMontly.past).concat("hrs");
+        document.getElementById('play-time-history-information').innerText = "Last Month - ".concat(playHoursMontly.past).concat("hrs");
+        document.getElementById('exercise-time-history-information').innerText = "Last Month - ".concat(exerciseHoursMontly.past).concat("hrs");
+        document.getElementById('social-time-history-information').innerText = "Last Month - ".concat(socialHoursMontly.past).concat("hrs");
+        document.getElementById('study-time-history-information').innerText = "Last Month - ".concat(studyHoursMontly.past).concat("hrs");
+        document.getElementById('self-care-time-history-information').innerText = "Last Month - ".concat(selfHoursMontly.past).concat("hrs");
     }
 }
 
