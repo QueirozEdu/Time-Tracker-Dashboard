@@ -23,7 +23,7 @@ let time =
     },
     "self": {
         "current": "1",
-        "past": "3"
+        "past": "1"
     }
 };
 
@@ -132,9 +132,35 @@ function changeSchedule(id) {
     let time = id
     if (time == "daily") {
         document.getElementById('work-time-information').innerText = workHours.current.concat("hrs");
+        document.getElementById('play-time-information').innerText = playHours.current.concat("hrs");
+        document.getElementById('exercise-time-information').innerText = exerciseHours.current.concat("hrs");
+        document.getElementById('social-time-information').innerText = socialHours.current.concat("hrs");
+        document.getElementById('study-time-information').innerText = studyHours.current.concat("hrs");
+        document.getElementById('self-care-time-information').innerText = selfHours.current.concat("hrs");
+
+        document.getElementById('work-time-history-information').innerText = "Last Week - ".concat(workHours.past).concat("hrs");
+        document.getElementById('play-time-history-information').innerText = "Last Week - ".concat(playHours.past).concat("hrs");
+        document.getElementById('exercise-time-history-information').innerText = "Last Week - ".concat(exerciseHours.past).concat("hrs");
+        document.getElementById('social-time-history-information').innerText = "Last Week - ".concat(socialHours.past).concat("hrs");
+        document.getElementById('study-time-history-information').innerText = "Last Week - ".concat(studyHours.past).concat("hrs");
+        document.getElementById('self-care-time-history-information').innerText = "Last Week - ".concat(selfHours.past).concat("hrs");
+        
+
     }
     else if (time == "weekly") {
         document.getElementById('work-time-information').innerText = workHoursWeekly.current.concat("hrs");
+        document.getElementById('play-time-information').innerText = playHoursWeekly.current.concat("hrs");
+        document.getElementById('exercise-time-information').innerText = exerciseHoursWeekly.current.concat("hrs");
+        document.getElementById('social-time-information').innerText = socialHours.current.concat("hrs");
+        document.getElementById('study-time-information').innerText = studyHoursWeekly.current.concat("hrs");
+        document.getElementById('self-care-time-information').innerText = selfHoursWeekly.current.concat("hrs");
+
+        document.getElementById('work-time-history-information').innerText = "Last Week - ".concat(workHoursWeekly.past).concat("hrs");
+        document.getElementById('play-time-history-information').innerText = "Last Week - ".concat(playHoursWeekly.past).concat("hrs");
+        document.getElementById('exercise-time-history-information').innerText = "Last Week - ".concat(exerciseHoursWeekly.past).concat("hrs");
+        document.getElementById('social-time-history-information').innerText = "Last Week - ".concat(socialHoursWeekly.past).concat("hrs");
+        document.getElementById('study-time-history-information').innerText = "Last Week - ".concat(studyHoursWeekly.past).concat("hrs");
+        document.getElementById('self-care-time-history-information').innerText = "Last Week - ".concat(selfHoursWeekly.past).concat("hrs");
     }
     else {
         document.getElementById('work-time-information').innerText = workHoursMontly.current.concat("hrs")
