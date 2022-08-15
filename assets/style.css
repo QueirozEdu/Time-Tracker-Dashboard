@@ -215,3 +215,33 @@
     background-color: var(--soft-orange-self-care);
     background-image: url(/assets/images/icon-self-care.svg);
 }
+
+@media (max-width: 1024px) {
+    .main {
+        height: auto;
+    }
+    .time-manager {
+        flex-direction: column;
+    }
+    .user-block {
+        display: flex;
+        width: 100%;
+    }
+    .user-block__profile {
+        height: auto;
+    }
+    .user-block__profile___information {
+        display: flex;
+        flex-direction: row;
+    }
+    .report-for {
+        margin: 10px 20px 20px 20px;
+    }
+
+    .user-first-name {
+        margin: 25px auto 10px -95px;
+    }
+    .user-last-name {
+        margin: 25px auto 10px -95px;
+    }
+}
