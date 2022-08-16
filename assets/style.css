@@ -258,4 +258,8 @@
     .user-last-name {
         margin: 25px auto 10px -95px;
     }
+
+    .schedule-block {
+        margin-bottom: 20px;
+    }
 }
